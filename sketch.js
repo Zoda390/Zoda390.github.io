@@ -306,7 +306,7 @@ class Map {
 
 class Player {
   constructor() {
-      this.pos = { x: 1, y: 1};
+      this.pos = { x: 2, y: 2};
       this.lastmoveMilli = 0;
   }
 
@@ -323,7 +323,7 @@ class Player {
       if (keyIsDown(move_right_button)) {
           if (millis() - this.lastmoveMilli > 130) {
               this.pos.x++;
-              if (this.pos.x > cam.pos.x + width / tileSize - 4) {
+              if (this.pos.x > cam.pos.x + width / tileSize - 2) {
                   cam.pos.x++;
               }
               this.lastmoveMilli = millis();
@@ -332,7 +332,7 @@ class Player {
       if (keyIsDown(move_left_button)) {
           if (millis() - this.lastmoveMilli > 130) {
               this.pos.x--;
-              if (this.pos.x < cam.pos.x + 3) {
+              if (this.pos.x < cam.pos.x + 2) {
                   cam.pos.x--;
               }
               this.lastmoveMilli = millis();
@@ -341,7 +341,7 @@ class Player {
       if (keyIsDown(move_up_button)) {
           if (millis() - this.lastmoveMilli > 130) {
               this.pos.y--;
-              if (this.pos.y < cam.pos.y + 3) {
+              if (this.pos.y < cam.pos.y + 2) {
                   cam.pos.y--;
               }
               this.lastmoveMilli = millis();
@@ -350,7 +350,7 @@ class Player {
       if (keyIsDown(move_down_button)) {
           if (millis() - this.lastmoveMilli > 130) {
               this.pos.y++;
-              if (this.pos.y > cam.pos.y + height / tileSize - 4) {
+              if (this.pos.y > cam.pos.y + height / tileSize - 2) {
                   cam.pos.y++;
               }
               this.lastmoveMilli = millis();
