@@ -283,7 +283,7 @@ class Chunk {
   }
 }
 
-class Map {
+class _Map {
   constructor(seed) {
       this.seed = seed;
       this.chunks = [
@@ -430,16 +430,16 @@ var tileSize = 64;
 var chunkSize = 16;
 var maxHeight = 6;
 var zCC = 50;
-var player;
-var cam;
-var serverMap;
+var player = 0;
+var cam = 0;
+var serverMap = 0;
 var betterRender = true;
 //Hi
 
 function setup() {
   var cnv = createCanvas(windowWidth-20, document.documentElement.clientHeight);
   cnv.parent('canvasDiv');
-  serverMap = new Map(1);
+  serverMap = new _Map(1);
   player = new Player();
   cam = new Camera();
 }
@@ -467,5 +467,5 @@ function takeInput() {
 }
 
 function windowResized(){
-  resizeCanvas(windowWidth, document.documentElement.clientHeight);
+  resizeCanvas(windowWidth - 20, document.documentElement.clientHeight);
 }
