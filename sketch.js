@@ -33,40 +33,40 @@ class Tile {
       );
       if(betterRender){
           if(this.pos.z == 0){
-              fill(0, 0, 100)
+              fill(119 - zCC, 220 - zCC, 230 - zCC)
           }
           else if(this.pos.z == 1){
-              fill(0, 0, 255)
+              fill(119, 220, 230)
           }
           else if(this.pos.z == 2){
               fill(255, 255, 100)
           }
           else if(this.pos.z == 3){
-              if(this.biome == 0){
-                  fill(155, 70, 0)//orange-ish
-              }
-              else if(this.biome == 1){
-                  fill(0, 155, 0)//green-ish
-              }
-              else if(this.biome == 2){
-                  fill(90, 0, 175)//purple-ish
-              }
-              else if(this.biome == 3){
-                  fill(155, 0, 0)//red-ish
-              }
+            if(this.biome == 0){
+              fill(230 - zCC, 157 - zCC, 106 - zCC)//orange-ish
+            }
+            else if(this.biome == 1){
+                fill(108 - zCC, 230 - zCC, 168 - zCC)//green-ish
+            }
+            else if(this.biome == 2){
+                fill(170 - zCC, 131 - zCC, 230 - zCC)//purple-ish
+            }
+            else if(this.biome == 3){
+                fill(230 - zCC, 92 - zCC, 76 - zCC)//red-ish
+            }
           }
           else if(this.pos.z == 4){
               if(this.biome == 0){
-                  fill(255, 170, 0)//orange-ish
+                  fill(230, 157, 106)//orange-ish
               }
               else if(this.biome == 1){
-                  fill(0, 255, 0)//green-ish
+                  fill(108, 230, 168)//green-ish
               }
               else if(this.biome == 2){
-                  fill(170, 0, 255)//purple-ish
+                  fill(170, 131, 230)//purple-ish
               }
               else if(this.biome == 3){
-                  fill(255, 0, 0)//red-ish
+                  fill(230, 92, 76)//red-ish
               }
           }
           else if(this.pos.z == 5){
@@ -437,7 +437,7 @@ var betterRender = true;
 //Hi
 
 function setup() {
-  var cnv = createCanvas(windowWidth, document.documentElement.clientHeight);
+  var cnv = createCanvas(windowWidth-20, document.documentElement.clientHeight);
   cnv.parent('canvasDiv');
   serverMap = new Map(1);
   player = new Player();
