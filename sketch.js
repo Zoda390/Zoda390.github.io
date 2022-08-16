@@ -434,6 +434,7 @@ var player;
 var cam;
 var serverMap;
 var betterRender = true;
+//Hi
 
 function setup() {
   var cnv = createCanvas(windowWidth, document.documentElement.clientHeight);
