@@ -1,0 +1,332 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="/css/main.min.css" rel="stylesheet">
+	<title>Christian Rodriguez</title>
+	<script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
+
+	<style>
+		section{
+			padding: 0 10px;
+			padding-bottom: 10px;
+			padding-top: 0;
+			margin: 100px 0;
+		}
+		h4{
+			padding: 10px 0;
+		}
+	</style>
+
+</head>
+<body class = "bg-dark">
+	<div class="container" style="padding: 0px; margin-left: 10px; margin-right: 10px; width: 98%; max-width: 98%;">
+		<div class="row justify-content-start">
+			<div class="col-2 offset-0" style="width: 10%;">
+				<div id="canvasDiv"></div>
+			</div>
+			<div class="col-10 offset-0">
+				<section id = "Hero">
+					<h1 class = "text-light text-center" style="padding: 10px; text-shadow: 0 0 3px #E69D6A, 0 0 3px #E69D6A, 0 0 3px #E69D6A;">Christian Rodriguez</h1>
+					<h3 class="text-light text-center" style="text-shadow: 0 0 3px #AB84E6, 0 0 3px #AB84E6, 0 0 3px #AB84E6;">Game Maker</h3>
+				</section>
+				<section id = "Bio">
+					<div class="container">
+						<div class="row">
+							<div class="col align-self-start rounded border border-primary border-5" style="padding: 0;">
+								<h4 class="text-dark" style="background-color: #AB84E6; padding: 5px 10px; margin: 0;">About Me</h4>
+								<p class="text-dark" style="background-color: #AB84E6; padding: 5px 10px; margin: 0;">Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla</p>
+							</div>
+							<div class="col align-self-start">
+								<img src="assets/Me.jpg" class = "rounded mx-auto d-block border border-primary border-5" alt="A picture of my face" style="width: 200px; height: 200px;">
+							</div>
+						</div>
+					</div>
+					
+				</section>
+				<section id = "Games" class = "rounded border border-primary border-5" style="background-color: #AB84E6;">
+					<h4 class="text-dark">Games</h4>
+					<p class="text-dark">These are all games I have made or helped with.</p>
+					<div class="container">
+						<nav class="nav nav-tabs" id="nav-tab" role="tablist">
+							<button class="nav-link active" id="nav-game1-tab" data-bs-toggle="tab" data-bs-target="#nav-game1" type="button" role="tab" aria-controls="nav-game1" aria-selected="true">Cloudy Meadows</button>
+							<button class="nav-link" id="nav-game2-tab" data-bs-toggle="tab" data-bs-target="#nav-game2" type="button" role="tab" aria-controls="nav-game2" aria-selected="false">Love Letter Collector</button>
+							<button class="nav-link" id="nav-game3-tab" data-bs-toggle="tab" data-bs-target="#nav-game3" type="button" role="tab" aria-controls="nav-game3" aria-selected="false">Nebula Hive Mind</button>
+							<button class="nav-link" id="nav-game4-tab" data-bs-toggle="tab" data-bs-target="#nav-game4" type="button" role="tab" aria-controls="nav-game4" aria-selected="false">Color Hell</button>
+							<button class="nav-link" id="nav-game5-tab" data-bs-toggle="tab" data-bs-target="#nav-game5" type="button" role="tab" aria-controls="nav-game5" aria-selected="false">Plane Game</button>
+						</nav>
+					</div>
+					<div class="tab-content text-dark border border-primary" id="nav-tabContent">
+						<div class="tab-pane fade show active p-3" id="nav-game1" role="tabpanel" aria-labelledby="nav-game1-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/Cloudy_Meadows-pic.png" class = "rounded mx-auto d-block" alt="A screenshot of cloudy meadows" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Cloudy Meadows</h4>
+										<p class="text-dark">A game about farming on the tops of skyscrapers.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://virtualnerd1.itch.io/cloudy-meadows">Itch.io</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="tab-pane fade p-3" id="nav-game2" role="tabpanel" aria-labelledby="nav-game2-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/love-letter-collector-pic.png" class = "rounded mx-auto d-block" alt="A screenshot of love letter collector" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Love Letter Collector</h4>
+										<p class="text-dark">A game about a new angel collecting love letters.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/CmErx7FqU">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="tab-pane fade p-3" id="nav-game3" role="tabpanel" aria-labelledby="nav-game3-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/nebula-hive-mind.jpg" class = "rounded mx-auto d-block" alt="A screenshot of nebula hive mind" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Nebula Hive Mind</h4>
+										<p class="text-dark">A game about killing spaceships to form a great team.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://zoda39089.itch.io/nebula-hive-mind-reborn">Itch.io</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade p-3" id="nav-game4" role="tabpanel" aria-labelledby="nav-game4-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/color-hell-pic.png" class = "rounded mx-auto d-block" alt="A screenshot of color hell" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Color Hell</h4>
+										<p class="text-dark">A game about spawning and doging colorful bullets.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://zoda39089.itch.io/color-hell">Itch.io</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade p-3" id="nav-game5" role="tabpanel" aria-labelledby="nav-game5-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/plane-game-pic.jpg" class = "rounded mx-auto d-block" alt="A screenshot of plane game" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Plane Game</h4>
+										<p class="text-dark">A game about flying a small plane over the ocean while avoiding the waves and birds.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://zoda39089.itch.io/plane-game">Itch.io</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id = "Demos" class = "rounded border border-primary border-5" style="background-color: #AB84E6;">
+					<h4 class="text-dark">Demos</h4>
+					<p class="text-dark">These are small very programming based examples I have made while learning these concepts, so I can reference them when I need something similar in a game.</p>
+					<div class="container">
+						<nav class="nav nav-tabs" id="nav-tab" role="tablist">
+							<button class="nav-link active" id="nav-demo1-tab" data-bs-toggle="tab" data-bs-target="#nav-demo1" type="button" role="tab" aria-controls="nav-demo1" aria-selected="true">Diamond Square Algorithm</button>
+							<button class="nav-link" id="nav-demo2-tab" data-bs-toggle="tab" data-bs-target="#nav-demo2" type="button" role="tab" aria-controls="nav-demo2" aria-selected="false">Team Picker</button>
+							<button class="nav-link" id="nav-demo3-tab" data-bs-toggle="tab" data-bs-target="#nav-demo3" type="button" role="tab" aria-controls="nav-demo3" aria-selected="false">2.5 render</button>
+							<button class="nav-link" id="nav-demo4-tab" data-bs-toggle="tab" data-bs-target="#nav-demo4" type="button" role="tab" aria-controls="nav-demo4" aria-selected="false">Fishing minigame</button>
+							<button class="nav-link" id="nav-demo5-tab" data-bs-toggle="tab" data-bs-target="#nav-demo5" type="button" role="tab" aria-controls="nav-demo5" aria-selected="false">Quests</button>
+							<button class="nav-link" id="nav-demo6-tab" data-bs-toggle="tab" data-bs-target="#nav-demo6" type="button" role="tab" aria-controls="nav-demo6" aria-selected="false">Robots</button>
+							<button class="nav-link" id="nav-demo7-tab" data-bs-toggle="tab" data-bs-target="#nav-demo7" type="button" role="tab" aria-controls="nav-demo7" aria-selected="false">Chests</button>
+							<button class="nav-link" id="nav-demo8-tab" data-bs-toggle="tab" data-bs-target="#nav-demo8" type="button" role="tab" aria-controls="nav-demo8" aria-selected="false">Level Editor</button>
+						</nav>
+					</div>
+					<div class="tab-content text-dark border border-primary" id="nav-tabContent">
+						<div class="tab-pane fade show active p-3" id="nav-demo1" role="tabpanel" aria-labelledby="nav-demo1-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/Diamond-Square-pic.png" class = "rounded mx-auto d-block" alt="A picture of my Diamond Square Demo" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Diamond Square Algorithm</h4>
+										<p class="text-dark">A demo about using the Diamond Square Algorithm to make random height maps. Reload the page to make a new height map, or look at the code by clicking the < / > symbol on the top right.</p>
+										<div class="p-3"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/w4qYn_kxq">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="tab-pane fade p-3" id="nav-demo2" role="tabpanel" aria-labelledby="nav-demo2-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/Team-Picker-pic.png" class = "rounded mx-auto d-block" alt="A picture of my Team Picker Demo" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Team Picker</h4>
+										<p class="text-dark">A demo about a team picker I hope to use in an upcoming game.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/T2ZzWi6Xj">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="tab-pane fade p-3" id="nav-demo3" role="tabpanel" aria-labelledby="nav-demo3-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/2-5D-pic.png" class = "rounded mx-auto d-block" alt="A picture of my 2.5D demo" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">2.5d Render</h4>
+										<p class="text-dark">A demo about how I plan on rendering tiles in 2.5d for an upcoming game.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/RFkkX_HdG">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade p-3" id="nav-demo4" role="tabpanel" aria-labelledby="nav-demo4-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/fishing-minigame-pic.png" class = "rounded mx-auto d-block" alt="A picture of my fishing minigame" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Fishing Minigame</h4>
+										<p class="text-dark">A demo about a fishing minigame I made in hopes of using it for Cloudy Meadows. Press E when the black line lines up with the yellow part of the circle.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/wzqZf2EsO">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade p-3" id="nav-demo5" role="tabpanel" aria-labelledby="nav-demo5-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/Quest-Demo-pic.png" class = "rounded mx-auto d-block" alt="A picture of my quest system" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Quests</h4>
+										<p class="text-dark">A small game to demo the ability to get and complete
+											quests. The current quest is put in the top right. Click the
+											ball of the same color as your current quest. A to add 
+											new quests. Q to open the quest menu to see all active 
+											quests.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/-WSlAV1hx">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade p-3" id="nav-demo6" role="tabpanel" aria-labelledby="nav-demo6-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/robot-pic.png" class = "rounded mx-auto d-block" alt="A picture of my robot system" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Robots</h4>
+										<p class="text-dark">A demo about a robot sytem I created that I improved upon to make the current robot system in Cloudy Meadows.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/qLsxs4IrT">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade p-3" id="nav-demo7" role="tabpanel" aria-labelledby="nav-demo7-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/chests-pic.png" class = "rounded mx-auto d-block" alt="A picture of my chest system" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Chests</h4>
+										<p class="text-dark">A demo about a chest sytem I created that I improved upon to make the current robot system in Cloudy Meadows.</p>
+										<div class="p-4"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/KacXagSHS">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade p-3" id="nav-demo8" role="tabpanel" aria-labelledby="nav-demo8-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets/level-editor.png" class = "rounded mx-auto d-block" alt="A picture of my level editor" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">Level Editor</h4>
+										<p class="text-dark">A very simplistic level editor that I used to make some of the Love Letter Collector Levels.</p>
+										<div class="p-3"></div>
+										<a class="btn btn-outline-primary" href="https://editor.p5js.org/Zoda390/full/icIt1Ra8m">p5.js Editor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id = "Websites" class = "rounded border border-primary border-5" style="background-color: #AB84E6;">
+					<h4 class="text-dark">Websites</h4>
+					<p class="text-dark">I don't do websites as often but I helped and or made the following websites: </p>
+					<div class="container">
+						<nav class="nav nav-tabs" id="nav-tab" role="tablist">
+							<button class="nav-link active" id="nav-web1-tab" data-bs-toggle="tab" data-bs-target="#nav-web1" type="button" role="tab" aria-controls="nav-web1" aria-selected="true">My Personal Website</button>
+						</nav>
+					</div>
+					<div class="tab-content text-dark border border-primary" id="nav-tabContent">
+						<div class="tab-pane fade show active p-3" id="nav-web1" role="tabpanel" aria-labelledby="nav-web1-tab">
+							<div class="container">
+								<div class="row">
+									<div class="col-3 align-self-start">
+										<img src="assets" class = "rounded mx-auto d-block" alt="A picture of my Diamond Square Demo" style="width: 200px; height: 200px;">
+									</div>
+									<div class="col-9 align-self-start">
+										<h4 class="text-dark">My Personal Website</h4>
+										<p class="text-dark">A website to show off all of my skills and games.</p>
+										<div class="p-3"></div>
+										<a class="btn btn-outline-primary" href="">Link</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				<section id = "Resume" class = "rounded border border-primary border-5" style="background-color: #AB84E6;">
+					<h4 class="text-dark">Resume</h4>
+				</section>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
