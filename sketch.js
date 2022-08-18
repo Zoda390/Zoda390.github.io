@@ -437,7 +437,7 @@ var betterRender = true;
 //Hi
 
 function setup() {
-  var cnv = createCanvas(windowWidth-20, document.documentElement.clientHeight);
+  var cnv = createCanvas(windowWidth-20, document.getElementById('body').getBoundingClientRect().height);
   cnv.parent('canvasDiv');
   serverMap = new _Map(1);
   player = new Player();
@@ -467,5 +467,5 @@ function takeInput() {
 }
 
 function windowResized(){
-  resizeCanvas(windowWidth - 20, document.documentElement.clientHeight);
+  resizeCanvas(windowWidth - 20, document.getElementById('body').getBoundingClientRect().height);
 }
