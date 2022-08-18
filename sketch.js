@@ -43,30 +43,30 @@ class Tile {
           }
           else if(this.pos.z == 3){
             if(this.biome == 0){
-              fill(230 - zCC, 157 - zCC, 106 - zCC)//orange-ish
+              fill(230 - zCC*2, 157 - zCC*2, 106 - zCC*2)//orange-ish
             }
             else if(this.biome == 1){
-                fill(108 - zCC, 230 - zCC, 168 - zCC)//green-ish
+                fill(108 - zCC*2, 230 - zCC*2, 168 - zCC*2)//green-ish
             }
             else if(this.biome == 2){
-                fill(170 - zCC, 131 - zCC, 230 - zCC)//purple-ish
+                fill(170 - zCC*2, 131 - zCC*2, 230 - zCC*2)//purple-ish
             }
             else if(this.biome == 3){
-                fill(230 - zCC, 92 - zCC, 76 - zCC)//red-ish
+                fill(230 - zCC*2, 92 - zCC*2, 76 - zCC*2)//red-ish
             }
           }
           else if(this.pos.z == 4){
               if(this.biome == 0){
-                  fill(230, 157, 106)//orange-ish
+                  fill(230 - zCC, 157 - zCC, 106 - zCC)//orange-ish
               }
               else if(this.biome == 1){
-                  fill(108, 230, 168)//green-ish
+                  fill(108 - zCC, 230 - zCC, 168 - zCC)//green-ish
               }
               else if(this.biome == 2){
-                  fill(170, 131, 230)//purple-ish
+                  fill(170 - zCC, 131 - zCC, 230 - zCC)//purple-ish
               }
               else if(this.biome == 3){
-                  fill(230, 92, 76)//red-ish
+                  fill(230 - zCC, 92 - zCC, 76 - zCC)//red-ish
               }
           }
           else if(this.pos.z == 5){
