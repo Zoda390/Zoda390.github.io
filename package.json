@@ -9,6 +9,7 @@
   "author": "Christian Rodriguez",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "personal-website": "file:"
   }
 }
