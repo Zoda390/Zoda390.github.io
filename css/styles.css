@@ -13,7 +13,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 480px;
+    min-width: 370px;
+    min-height: 420px;
 }
 
 .bigCenterDiv {
@@ -21,7 +22,7 @@
     color: white;
     width: 80%;
     height: 80%;
-    margin-left: 10%;
+    margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -30,7 +31,9 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    min-width: 370px;
+    min-height: 420px;
 }
 
 .hb1{
@@ -38,6 +41,7 @@
     flex-direction: row;
     justify-content: space-around;
     width: 75%;
+    min-width: 300px;
     margin: auto;
     padding: 5px;
     background-color: rgba(24, 17, 24, 0.45);
@@ -47,4 +51,44 @@
 .centerHorizontally{
     display: flex;
     justify-content: center;
+}
+
+.btn-outline-gray{
+    border: darkslategray solid 1px;
+    color: darkslategray;
+}
+
+.btn-outline-pink{
+    border: #BA4A7E solid 1px;
+    color: #BA4A7E;
+}
+
+.btn-outline-gray:hover{
+    border: darkslategray solid 1px;
+    background-color: darkslategray;
+    color: white;
+}
+
+.btn-outline-pink:hover{
+    border: #BA4A7E solid 1px;
+    background-color: #BA4A7E;
+}
+
+.my-btn{
+    padding: 3rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .my-btn{
+        padding: 1rem;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    #SocialsDiv{
+        height: 320px;
+        min-height: 320px;
+    }
 }

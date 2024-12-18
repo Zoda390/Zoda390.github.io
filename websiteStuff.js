@@ -7,6 +7,13 @@ descJson = `
 descJson = descJson.replaceAll("\n", "");
 descJson = descJson.replaceAll("    ", " ");
 
-projectsJson = {
-    
-}
+projectsJson = [
+    {
+        type: "Game",
+        name: "Cloudy Meadows",
+        imgPath: "",
+        link: "",
+        linkName: "",
+        desc: ""
+    },
+]

@@ -9,6 +9,7 @@ var shrikeCount = 1;
 var fishCount = 20;
 var foodCount = 10;
 var Margin = 30;
+var PixelSize = 1;
 
 var COLORS = [];
 
@@ -19,6 +20,8 @@ function setup() {
     cnv.parent('canvasDiv');
 
     angleMode(DEGREES);
+
+    PixelSize = (windowWidth / (1920*2)) + 0.5;
 
     COLORS = [
         color("#A94949"),
@@ -48,10 +51,10 @@ function setup() {
     ]
 
     for(let i = 0; i < shrikeCount; i++){
-        shrikes.push(new Shrike(0.4));
+        shrikes.push(new Shrike(0.4*PixelSize));
     }
     for(let i = 0; i < fishCount; i++){
-        fish.push(new Fish(0.7));
+        fish.push(new Fish(0.7*PixelSize));
     }
     for(let i = 0; i < foodCount; i++){
         food.push(new Food(random(Margin,width-Margin),random(Margin,height-Margin)));
@@ -81,7 +84,7 @@ function draw(){
             fish.splice(i,1);
             eatenFishIDs.splice(j,1);
             i--;
-            fish.push(new Fish(0.7));
+            fish.push(new Fish(0.7*PixelSize));
             }
         }
     }

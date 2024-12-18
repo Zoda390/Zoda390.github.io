@@ -23,12 +23,12 @@ class Fish{
         
         this.body = [];
         this.bodySegments = 10;
-        this.body[0] = new Segment(7*sizePercent,(20*sizePercent)*(sin(((0)/(this.bodySegments/2))*90)), this.c1);
-        this.totalBodyLength = 7*sizePercent;
+        this.body[0] = new Segment(7*this.sp,(20*this.sp)*(sin(((0)/(this.bodySegments/2))*90)), this.c1);
+        this.totalBodyLength = 7*this.sp;
         for(let i = 0; i < this.bodySegments-1; i++){
             this.body.push(new Segment(
-                (7*sizePercent),
-                (20*sizePercent)*(sin(((i+1)/(this.bodySegments/2))*90)), 
+                (7*this.sp),
+                (20*this.sp)*(sin(((i+1)/(this.bodySegments/2))*90)), 
                 colorMap(i+1,0,this.bodySegments-1,this.c1,this.c2)
             ));
             this.totalBodyLength += this.body[i+1].l;

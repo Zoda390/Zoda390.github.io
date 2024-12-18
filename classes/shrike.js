@@ -10,12 +10,12 @@ class Shrike{
         
         this.body = [];
         this.bodySegments = 20;
-        this.body[0] = new Segment(50*sizePercent,50*sizePercent, this.c1);
-        this.totalBodyLength = 10*sizePercent;
+        this.body[0] = new Segment(50*this.sp,50*this.sp, this.c1);
+        this.totalBodyLength = 10*this.sp;
         for(let i = 0; i < this.bodySegments-1; i++){
             this.body.push(new Segment(
-                map(i+1,0,this.bodySegments-1,50*sizePercent,10*sizePercent),
-                map(i+1,0,this.bodySegments-1,50*sizePercent,10*sizePercent), 
+                map(i+1,0,this.bodySegments-1,50*this.sp,10*this.sp),
+                map(i+1,0,this.bodySegments-1,50*this.sp,10*this.sp), 
                 colorMap(i+1,0,this.bodySegments-1,this.c1,this.c2)
             ));
             this.totalBodyLength += this.body[i+1].l;
@@ -24,8 +24,8 @@ class Shrike{
         this.swishStrength = 50;
         this.swishTimer = 0;
 
-        let armLs = [100*sizePercent,40*sizePercent,150*sizePercent];
-        let armTs = [30*sizePercent, 15*sizePercent, 20*sizePercent];
+        let armLs = [100*this.sp,40*this.sp,150*this.sp];
+        let armTs = [30*this.sp, 15*this.sp, 20*this.sp];
         this.armTotalLength = armLs[0]+armLs[1]+armLs[2];
         this.armL = [];
         this.armL.push(new Segment(armLs[0], armTs[0], color(50)));
