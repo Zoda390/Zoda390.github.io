@@ -15,8 +15,7 @@ var COLORS = [];
 function setup() {
     document.getElementById("AboutMeDesc").innerText = descJson;
 
-    var cnv = createCanvas(windowWidth, windowHeight-8);
-    cnv.style("margin", "0");
+    var cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('canvasDiv');
 
     angleMode(DEGREES);
