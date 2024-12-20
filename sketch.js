@@ -16,6 +16,16 @@ var COLORS = [];
 function setup() {
     document.getElementById("AboutMeDesc").innerText = descJson;
 
+    var gameCarousel = document.getElementById("gameCarousel");
+    var demoCarousel = document.getElementById("demoCarousel");
+    for(let i = 0; i < gamesJson.length; i++){
+        newCarouselItem(gameCarousel, "gameCarousel", gamesJson[i], i);
+    }
+    for(let i = 0; i < demosJson.length; i++){
+        newCarouselItem(demoCarousel, "demoCarousel", demosJson[i], i);
+    }
+
+
     var cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('canvasDiv');
 
@@ -59,6 +69,31 @@ function setup() {
     for(let i = 0; i < foodCount; i++){
         food.push(new Food(random(Margin,width-Margin),random(Margin,height-Margin)));
     }
+}
+
+function newCarouselItem(carousel, carouselStr, item, i){
+    let div = document.createElement("div");
+    let button = document.createElement("button");
+    if(i>0){
+        carousel.children[0].setHTMLUnsafe(carousel.children[0].innerHTML+'<button type="button" data-bs-target="#'+carouselStr+'" data-bs-slide-to="'+i+'" aria-current="true" aria-label="Slide '+(i+1)+'"></button>');
+        div.className = "carousel-item";
+    }
+    else{
+        carousel.children[0].setHTMLUnsafe('<button type="button" data-bs-target="#'+carouselStr+'" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>');
+        div.className = "carousel-item active";
+    }
+    div.setHTMLUnsafe(
+        `<div class="carousel-div">
+            <div class="carousel-desc-div">
+                <h3>`+item.name+`</h3>
+                <p class="carousel-desc-p">`+item.desc+`</p>
+                <div class="carosel-desc-spacer"></div>
+                <a class="btn btn-primary" style="width:150px;" href="`+item.link+`">`+item.linkName+`</a>
+            </div>
+            <img class="my-carousel-img" src="`+item.imgPath+`" alt="">
+        </div>`
+    );
+    carousel.children[1].appendChild(div);
 }
 
 function draw(){

@@ -2,6 +2,12 @@ $primary: #E39347;
 $secondary: #7C6DA2;
 $body-bg: #E39347;
 $nav-tabs-link-active-color: black;
+$accordion-bg: #00000000;
+$accordion-button-bg: rgb(83, 83, 83);
+$accordion-button-active-bg: #7C6DA2;
+$accordion-button-padding-x: 1rem;
+$accordion-button-padding-y: 0.5rem;
+$carousel-control-width: 3%;
 
 //Import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

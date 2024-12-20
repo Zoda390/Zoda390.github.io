@@ -21,7 +21,7 @@
     background-color: rgba(24, 17, 24, 0.45);
     color: white;
     width: 80%;
-    height: 80%;
+    height: 75%;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -46,6 +46,38 @@
     padding: 5px;
     background-color: rgba(24, 17, 24, 0.45);
     border: 1px solid white;
+}
+
+.carousel-div{
+    height: 51vh;
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4%;
+    padding-bottom: 4%;
+}
+
+.carousel-desc-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    padding-right: 10%;
+}
+
+.carousel-desc-p{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.carosel-desc-spacer{
+    height: 65%;
+}
+
+.my-carousel-img{
+    height:100%; 
+    max-width: 50%;
 }
 
 .centerHorizontally{
@@ -90,5 +122,40 @@
     #SocialsDiv{
         height: 320px;
         min-height: 320px;
+    }
+
+    .carousel-div{
+        height: 51vh;
+        background-color: rgba(255, 255, 255, 0.164);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        padding: 2% 4%;
+        padding-bottom: 4%;
+    }
+
+    .carousel-desc-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+        padding-right: 0%;
+    }
+    
+    .carousel-desc-p{
+        max-height: 10vh;
+    }
+
+    .carosel-desc-spacer{
+        height: 0%;
+    }
+
+    .my-carousel-img{
+        max-height:50%; 
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 4%;
     }
 }

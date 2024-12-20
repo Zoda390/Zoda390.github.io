@@ -4279,17 +4279,17 @@ textarea.form-control-lg {
 }
 
 .accordion {
-  --bs-accordion-color: #000;
-  --bs-accordion-bg: #E39347;
+  --bs-accordion-color: #fff;
+  --bs-accordion-bg: rgba(0, 0, 0, 0);
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: 1px;
   --bs-accordion-border-radius: 0.375rem;
   --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
-  --bs-accordion-btn-padding-x: 1.25rem;
-  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-padding-x: 1rem;
+  --bs-accordion-btn-padding-y: 0.5rem;
   --bs-accordion-btn-color: var(--bs-body-color);
-  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-bg: rgb(83, 83, 83);
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
@@ -4300,7 +4300,7 @@ textarea.form-control-lg {
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: rgb(204.3, 132.3, 63.9);
-  --bs-accordion-active-bg: rgb(252.2, 244.2, 236.6);
+  --bs-accordion-active-bg: #7C6DA2;
 }
 
 .accordion-button {
@@ -5811,7 +5811,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 3%;
   padding: 0;
   color: #fff;
   text-align: center;
@@ -5878,9 +5878,9 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-right: 15%;
+  margin-right: 3%;
   margin-bottom: 1rem;
-  margin-left: 15%;
+  margin-left: 3%;
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {
