@@ -58,16 +58,25 @@
     padding-bottom: 4%;
 }
 
-.carousel-desc-div{
+.carousel-left-div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: start;
-    padding-right: 10%;
+    padding-right: 2%;
+}
+
+.carousel-desc-p{
+    margin: 1px;
 }
 
 .carosel-desc-spacer{
-    height: 65%;
+    height: 1%;
+}
+
+.carousel-desc-div{
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .my-carousel-img{
@@ -130,7 +139,7 @@
         padding-bottom: 4%;
     }
 
-    .carousel-desc-div{
+    .carousel-left-div{
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -138,7 +147,7 @@
         padding-right: 0%;
     }
     
-    .carousel-desc-p{
+    .carousel-desc-div{
         max-height: 10vh;
     }
 

@@ -82,11 +82,19 @@ function newCarouselItem(carousel, carouselStr, item, i){
         carousel.children[0].setHTMLUnsafe('<button type="button" data-bs-target="#'+carouselStr+'" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>');
         div.className = "carousel-item active";
     }
+    let itemDesc = "";
+    for(j = 0; j < item.desc.length; j++){
+        itemDesc += "<p class='carousel-desc-p'>";
+        itemDesc += item.desc[j];
+        itemDesc += "</p>";
+    }
     div.setHTMLUnsafe(
         `<div class="carousel-div">
-            <div class="carousel-desc-div">
+            <div class="carousel-left-div">
                 <h3>`+item.name+`</h3>
-                <p class="carousel-desc-p">`+item.desc+`</p>
+                <div class="carousel-desc-div">
+                    `+itemDesc+`
+                </div>
                 <div class="carosel-desc-spacer"></div>
                 <a class="btn btn-primary" style="width:150px;" href="`+item.link+`">`+item.linkName+`</a>
             </div>
