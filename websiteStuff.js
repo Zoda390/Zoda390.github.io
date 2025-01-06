@@ -62,7 +62,7 @@ gamesJson = [
         imgPath: "assets/Greye-pic.png",
         link: "https://zoda39089.itch.io/greye",
         linkName: "Itch.io",
-        desc: "A game about killing all kinds of creatures and stealing their eyes to better see the world around you."
+        desc: "Type: Dungeon Crawler \n Greye offers a unique twist on the dungeon-crawling genre, blending traditional exploration with innovative mechanics: \n Item-Based Rendering: Developed a dynamic rendering system where equipping different items, like specialized "eyes," alters how players perceive the game world. This mechanic unlocks hidden paths, reveals secrets, or changes the way challenges are approached. \n Polished Gameplay: Focused heavily on refining the player experience with smooth controls, intuitive UI, and atmospheric visuals, creating a cohesive and immersive dungeon-crawling adventure. \n Dynamic World Interactions: Items don't just change your view but interact with the environment, adding a layer of puzzle-solving to the core exploration and combat mechanics. \n This project highlights my ability to integrate innovative mechanics into classic genres while maintaining a polished and engaging player experience."
     }
 ]
 
